@@ -5,6 +5,7 @@
  * dumb function : node_modules/@siteed/expo-audio-studio/src/AudioAnalysis/extractPreview.ts (gf it) 
  */
 
+/*
 import { useSharedAudioRecorder, AudioRecorderProvider} from '@siteed/expo-audio-studio';
 
 
@@ -27,3 +28,4 @@ export async function recordingGraph(){
     return AudioApp;
 }
 
+*/

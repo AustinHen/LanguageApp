@@ -1,16 +1,13 @@
 import { Text, View } from "react-native";
 import { LineChart } from 'react-native-chart-kit'; //god I hate dep
+import MirrorPage from "./Mirror"
+import styles from "./Style"
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.index}>
+        /*todo add some form of padding for the wierd camera hole  (idk styling yet)*/
+        <MirrorPage/>
     </View>
   );
 }
