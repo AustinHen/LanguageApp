@@ -11,17 +11,26 @@ export default StyleSheet.create({
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
     },
 
     cameraCont: {
         height: 180,
         padding: 14,
-        borderRadius: 10,
+        borderRadius: 15,
         backgroundColor: mediumColor,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
+
+        shadowColor: '#fff',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.05,
+        shadowRadius: 20,
+
+
+
+        
     },
 
     camera: {
@@ -41,22 +50,40 @@ export default StyleSheet.create({
     },
 
     mirrorVideo: {
-        borderRadius: 10,
+        borderRadius: 15,
         backgroundColor: mediumColor,
         marginBottom: 10,
         padding: 80, //delete later just for layout till video comes in
     },
 
     navBar: {
+        padding: 7,
+        paddingBottom: 25,
+        backgroundColor: mediumColor,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        position: 'absolute',
+        bottom: '0%',
+        left: '0%',
+        width: '100%',
+    },
+
+    headerCont: {
+        flex: 1,
+    },
+
+    headerBar: {
         borderColor: '#ff21bc',
         borderWidth: 2,
         borderRadius: 50,
-        padding: 7,
+        padding: 15,
+
         margin: 10,
         backgroundColor: mediumColor,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
+        color: 'white',
     },
-
 });
