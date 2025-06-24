@@ -34,9 +34,8 @@ export default StyleSheet.create({
     },
 
     camera: {
-        height: '100%',
-        width: '100%',
         overflow: 'hidden',
+        flex:1, 
         borderRadius: 7,
     },
 
@@ -67,6 +66,8 @@ export default StyleSheet.create({
         bottom: '0%',
         left: '0%',
         width: '100%',
+        zIndex: 10,
+        pointerEvents: 'box-none',
     },
 
     headerCont: {

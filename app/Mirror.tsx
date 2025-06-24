@@ -6,13 +6,13 @@ import styles from "./Style"
 export default function MirrorPage(){
     return <View style={styles.mirrorPage}>
         {Video()}
-        {Mirror()}
+        <Mirror/>
     </View>
 }
 
 //this function killed the radio star
 function Video(){
-    return <View style={styles.mirrorVideo}>
+    return <View style={styles.mirrorVideo} >
         <Text>MEEEP MEEEP</Text>
     </View>
     
@@ -39,9 +39,9 @@ function Mirror() {
 
 
     return (
-            <View style={styles.cameraCont}>
-            <CameraView style={styles.camera} facing={facing}>
-            </CameraView>
+            <View style={styles.cameraCont} pointerEvents="none">
+            <CameraView style={styles.camera} facing={facing}  pointerEvents="none"/>
             </View>
+            
            );
 }
