@@ -32,12 +32,12 @@ export default StyleSheet.create({
     },
 
     mirrorPage: {
-        height: '100%',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
         padding: 10,
+        flex: 1, 
     },
 
     mirrorVideo: {
@@ -46,4 +46,17 @@ export default StyleSheet.create({
         marginBottom: 10,
         padding: 80, //delete later just for layout till video comes in
     },
+
+    navBar: {
+        borderColor: '#ff21bc',
+        borderWidth: 2,
+        borderRadius: 50,
+        padding: 7,
+        margin: 10,
+        backgroundColor: mediumColor,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+    },
+
 });
