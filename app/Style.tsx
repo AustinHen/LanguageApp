@@ -1,21 +1,24 @@
 //This is just the css sheet -> idk why they dont parse css 
 import { StyleSheet } from 'react-native';
 
+const darkColor = '#1c1d22'; 
+const mediumColor = '#26272e';
+
 export default StyleSheet.create({
     index: {
+        backgroundColor: darkColor,
         height: '100%',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
-        padding: 10,
+        justifyContent: 'center',
     },
 
     cameraCont: {
-        height: '50%',
-        padding: 10,
-        borderRadius: 20,
-        backgroundColor: '#ccc',
+        height: 180,
+        padding: 14,
+        borderRadius: 10,
+        backgroundColor: mediumColor,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
@@ -25,10 +28,22 @@ export default StyleSheet.create({
         height: '100%',
         width: '100%',
         overflow: 'hidden',
-        borderRadius: 20,
+        borderRadius: 7,
     },
 
-    //no empty ruleset lsp error for me :)
     mirrorPage: {
-    }
+        height: '100%',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        padding: 10,
+    },
+
+    mirrorVideo: {
+        borderRadius: 10,
+        backgroundColor: mediumColor,
+        marginBottom: 10,
+        padding: 80, //delete later just for layout till video comes in
+    },
 });

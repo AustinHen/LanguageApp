@@ -12,7 +12,8 @@ export default function MirrorPage(){
 
 //this function killed the radio star
 function Video(){
-    return <View>
+    return <View style={styles.mirrorVideo}>
+        <Text>MEEEP MEEEP</Text>
     </View>
     
 }
